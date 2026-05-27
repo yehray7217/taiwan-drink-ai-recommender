@@ -1,3 +1,75 @@
+# How to Run / 專案執行方式
+
+## 1. Clone repository
+
+```bash
+git clone https://github.com/yehray7217/taiwan-drink-ai-recommender.git
+cd taiwan-drink-ai-recommender
+```
+
+## 2. Install dependencies
+
+```bash
+npm install
+```
+
+## 3. Create `.env.local`
+
+在專案根目錄新增 `.env.local`：
+
+```env
+GROQ_API_KEY=your_groq_api_key
+```
+
+如果你的 Windows 電腦要用 `py` 才能執行 Python，請再加上：
+
+```env
+PYTHON_BIN=py
+```
+
+如果 `python` 指令可以正常使用，就不用設定 `PYTHON_BIN`。
+
+## 4. Test rule engine
+
+先確認 Python 規則引擎可以正常讀取飲料資料並輸出篩選結果：
+
+```bash
+python src/rule_engine/rule_engine.py --drinks data/drinks.json --output filter_result.json
+```
+
+Windows 如果 `python` 指令不能用，可以改用：
+
+```bash
+py src/rule_engine/rule_engine.py --drinks data/drinks.json --output filter_result.json
+```
+
+## 5. Run web app
+
+```bash
+npm run dev
+```
+
+打開瀏覽器：
+
+```text
+http://localhost:3000
+```
+
+## 6. Notes
+
+以下檔案或資料夾不需要從 GitHub clone 下來，會由本機安裝或執行時自動產生：
+
+```text
+node_modules/
+.next/
+filter_result.json
+auto_test_outputs/
+```
+
+`.env.local` 內含 API Key，不應該 commit 到 GitHub。
+
+---
+
 # 台灣手搖飲 AI 推薦與多 Agent 對抗式決策系統
 
 ## 1. 專案簡介

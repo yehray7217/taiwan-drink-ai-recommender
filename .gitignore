@@ -1,0 +1,7 @@
+node_modules/
+.next/
+.env.local
+.env
+auto_test_outputs/
+filter_result.json
+*.log

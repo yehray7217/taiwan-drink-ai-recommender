@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7f2;
+  color: #1f2a24;
+  font-family: Arial, "Microsoft JhengHei", sans-serif;
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #dff4e8;
+  color: #126b42;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 16px 0 8px;
+}
+
+.subtitle {
+  color: #5b665f;
+  font-size: 18px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e1e7df;
+  border-radius: 20px;
+  padding: 24px;
+  margin: 18px 0;
+  box-shadow: 0 10px 30px rgba(20, 40, 30, 0.06);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #cfd8d1;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  background: #106b43;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stats span {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #eef5ee;
+}
+
+.best {
+  border-color: #94d3ad;
+  background: #fbfffc;
+}
+
+.order {
+  font-weight: 800;
+  color: #0d6b42;
+}
+
+.list {
+  display: grid;
+  gap: 12px;
+}
+
+.item {
+  padding: 14px;
+  border-radius: 14px;
+  background: #f6f8f5;
+}
+
+.error {
+  border-color: #e8a3a3;
+  background: #fff7f7;
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
