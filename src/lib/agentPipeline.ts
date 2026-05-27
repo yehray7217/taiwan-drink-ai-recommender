@@ -27,12 +27,12 @@ async function callLlm(systemPrompt: string, userContent: string): Promise<strin
 // C 模組的核心進入點（API Contract）
 export async function runAgentPipeline(userPref: any, candidates: any[]): Promise<any> {
     // --- Agent 1: 推薦專家 ---
-    const sysPromptRec = "你是一個熱情的手搖飲推薦專家。請根據使用者的偏好與候選名單，強力推薦最適合的2-3款飲料，並說明推薦理由。";
+    const sysPromptRec = "你是一個熱情的手搖飲推薦專家。請根據使用者的偏好與候選名單，強力推薦最適合的2-3款飲料，並說明推薦理由。候選名單的Score僅供簡單參考，請以使用者偏好(尤其是query)為主，從candidate中做選擇。另外過敏原或有無奶類只要使用者偏好沒提到就不用太過在意";
     const userContentRec = `使用者偏好: ${JSON.stringify(userPref)}\n候選名單: ${JSON.stringify(candidates)}`;
     const recResult = await callLlm(sysPromptRec, userContentRec);
 
     // --- Agent 2: 稽查員找碴 ---
-    const sysPromptCri = "你是一個極度挑剔的飲料稽查員、健康魔人。請對比使用者偏好，挑出推薦專家的建議中潛在的風險或缺點（如咖啡因、過敏原、甜度）。";
+    const sysPromptCri = "你是一個極度挑剔的飲料稽查員、健康魔人。請對比使用者偏好，挑出推薦專家的建議中潛在的風險或缺點（如咖啡因、過敏原、甜度）。另外過敏原或有無奶類只要使用者偏好沒提到就不用太過在意";
     const userContentCri = `使用者偏好: ${JSON.stringify(userPref)}\n推薦專家的建議: ${recResult}`;
     const criticResult = await callLlm(sysPromptCri, userContentCri);
 
@@ -51,7 +51,7 @@ export async function runAgentPipeline(userPref: any, candidates: any[]): Promis
     "judgeSummary": "裁判的決策摘要"
   }
 }`;
-    const userContentJud = `使用者偏好: ${JSON.stringify(userPref)}\n推薦專家意見: ${recResult}\n稽查員意見: ${criticResult}`;
+    const userContentJud = `使用者偏好: ${JSON.stringify(userPref)}\n候選名單: ${JSON.stringify(candidates)}\n推薦專家意見: ${recResult}\n稽查員意見: ${criticResult}`;
     const judgeResult = await callLlm(sysPromptJud, userContentJud);
 
     // 解析並回傳標準物件格式

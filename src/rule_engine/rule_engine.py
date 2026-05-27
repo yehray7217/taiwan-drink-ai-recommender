@@ -22,6 +22,7 @@ python src/rule_engine.py --drinks data/drinks.json --preference test_preference
 import argparse
 import json
 import os
+import random
 import re
 from typing import Any, Dict, List, Optional, Tuple
 import warnings
@@ -584,6 +585,10 @@ def build_filter_config(preference: Dict[str, Any]) -> Dict[str, Any]:
             "requestedIngredients": query_preferences.get("requestedIngredients", []),
             "timeOfDay": time_of_day,
             "brandPreference": normalize_list(preference.get("brandPreference", [])),
+            # randomize 用來讓同樣輸入不一定每次都回傳完全相同排序。
+            # 只加小幅 randomBonus，不會破壞硬性規則。
+            "randomize": bool(preference.get("randomize", True)),
+            "randomRange": int(preference.get("randomRange", 5)),
             "topK": int(preference.get("topK", 5)),
             "maxSameBrandInTopK": int(preference.get("maxSameBrandInTopK", 1)),
         },
@@ -719,7 +724,7 @@ def choose_sweetness(
         # 選最接近上限者，例如上限微糖就選微糖/三分糖
         valid_options.sort(key=lambda x: x[0], reverse=True)
         selected_value, selected_label = valid_options[0]
-        return selected_label, warnings, score_delta + 5
+        return selected_label, warnings, score_delta + 3
 
     if fixed_options:
         return fixed_options[0], ["固定甜，可能不適合低甜度需求"], -15
@@ -735,7 +740,7 @@ def choose_ice(available_ice: List[str], ice_preference: Optional[str]) -> Tuple
         return None, ["沒有冰量資料"], -3
 
     if ice_preference and ice_preference in available_ice:
-        return ice_preference, warnings, 5
+        return ice_preference, warnings, 2
 
     if ice_preference and ice_preference not in available_ice:
         warnings.append(f"無法選擇 {ice_preference}，改用 {available_ice[0]}")
@@ -755,17 +760,18 @@ def score_soft_rules(drink: Dict[str, Any], filter_config: Dict[str, Any]) -> Di
     matched_reasons = []
     warnings = []
 
+    caffeine_limit = filter_config["mustMatch"].get("caffeineMax", "no_limit")
+
     caffeine_level = drink.get("caffeineLevel", drink.get("caffeine_level", "unknown"))
     if caffeine_value(caffeine_level) == 0:
-        score += 20
-        matched_reasons.append("無咖啡因")
+        if caffeine_limit != "no_limit" or soft.get("timeOfDay") == "night":
+            matched_reasons.append("符合低咖啡因需求")
     elif caffeine_value(caffeine_level) == 1:
-        score += 12
-        matched_reasons.append("低咖啡因")
+        if caffeine_limit != "no_limit" or soft.get("timeOfDay") == "night":
+            matched_reasons.append("符合低咖啡因需求")
     elif caffeine_value(caffeine_level) == 2:
         warnings.append("含中等咖啡因")
     elif caffeine_value(caffeine_level) >= 3:
-        score -= 15
         warnings.append("含高咖啡因")
 
     if soft.get("timeOfDay") == "night":
@@ -777,15 +783,15 @@ def score_soft_rules(drink: Dict[str, Any], filter_config: Dict[str, Any]) -> Di
             warnings.append("晚上飲用可能影響睡眠")
 
     if not drink_contains_milk(drink):
-        score += 10
-        matched_reasons.append("無奶類")
+        if filter_config["mustExclude"].get("noMilk"):
+            matched_reasons.append("符合無奶需求")
 
     price = drink.get("price")
     price_max = filter_config["mustMatch"].get("priceMax")
     if price_max is not None and price is not None:
         try:
             if int(price) <= int(price_max):
-                score += 5
+                score += 1
                 matched_reasons.append(f"符合{price_max}元以內")
         except (TypeError, ValueError):
             pass
@@ -840,10 +846,10 @@ def score_soft_rules(drink: Dict[str, Any], filter_config: Dict[str, Any]) -> Di
     hit_requested = contains_any_text(search_text, requested)
     if requested:
         if hit_requested:
-            score += 45 + 8 * min(3, len(hit_requested))
+            score += 35 + 5 * min(3, len(hit_requested))
             matched_reasons.append(f"符合指定配料：{', '.join(hit_requested[:4])}")
         else:
-            score -= 35
+            score -= 50
             warnings.append(f"未包含指定配料：{', '.join(requested[:3])}")
 
     hit_preferred = contains_any_text(search_text, preferred)
@@ -855,7 +861,7 @@ def score_soft_rules(drink: Dict[str, Any], filter_config: Dict[str, Any]) -> Di
     hit_disliked = contains_any_text(search_text, disliked)
 
     if hit_disliked:
-        score -= 12 * len(set(hit_disliked))
+        score -= 20 * len(set(hit_disliked))
         warnings.append(f"包含不喜歡項目：{', '.join(sorted(set(hit_disliked)))}")
 
     brand_preference = set(soft.get("brandPreference", []))
@@ -872,7 +878,22 @@ def score_soft_rules(drink: Dict[str, Any], filter_config: Dict[str, Any]) -> Di
     enriched = dict(drink)
     enriched["recommendedOrder"] = "、".join(recommended_order_parts) if recommended_order_parts else "依店家預設"
     enriched["inferredNameTags"] = infer_name_tags(drink)
-    enriched["matchScore"] = max(0, min(100, int(score)))
+
+    base_score = max(0, min(100, int(score)))
+
+    # 加入小幅隨機分數，讓同樣輸入不會每次都得到完全相同排序。
+    # 注意：硬性篩選已經在前面完成，randomBonus 只影響通過篩選後的候選排序。
+    randomize = bool(soft.get("randomize", True))
+    try:
+        random_range = int(soft.get("randomRange", 5))
+    except (TypeError, ValueError):
+        random_range = 5
+    random_range = max(0, min(20, random_range))
+    random_bonus = random.randint(0, random_range) if randomize and random_range > 0 else 0
+
+    enriched["baseScore"] = base_score
+    enriched["randomBonus"] = random_bonus
+    enriched["matchScore"] = max(0, min(100, base_score + random_bonus))
     enriched["matchedReasons"] = matched_reasons
     enriched["warnings"] = list(dict.fromkeys(warnings))
 
@@ -893,6 +914,8 @@ def format_candidate_drink(drink):
         "flavorTags": drink.get("flavorTags", []),
         "inferredNameTags": drink.get("inferredNameTags", infer_name_tags(drink)),
         "recommendedOrder": drink.get("recommendedOrder"),
+        "baseScore": drink.get("baseScore", drink.get("matchScore", 0)),
+        "randomBonus": drink.get("randomBonus", 0),
         "matchScore": drink.get("matchScore", 0),
         "matchedReasons": drink.get("matchedReasons", []),
         "warnings": drink.get("warnings", [])
@@ -1015,6 +1038,8 @@ def default_preference() -> Dict[str, Any]:
         "dislikedFlavors": [],
         "timeOfDay": None,
         "brandPreference": [],
+        "randomize": True,
+        "randomRange": 5,
         "topK": 5,
         "maxSameBrandInTopK": 1,
     }

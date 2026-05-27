@@ -64,18 +64,16 @@ function makeDrinkKey(drink: DrinkChoice, index: number, prefix: string) {
 }
 
 export default function HomePage() {
-  const [query, setQuery] = useState(
-    "晚上不想喝太多咖啡因，不要太甜，預算70元內，不能喝牛奶"
-  );
+  const [query, setQuery] = useState("");
   const [sweetnessMax, setSweetnessMax] = useState("微糖");
   const [icePreference, setIcePreference] = useState("少冰");
   const [budgetMax, setBudgetMax] = useState(70);
-  const [caffeineLimit, setCaffeineLimit] = useState("low");
-  const [allergens, setAllergens] = useState("milk");
-  const [avoidIngredients, setAvoidIngredients] = useState("牛奶,奶精,鮮乳,奶蓋");
-  const [preferredFlavors, setPreferredFlavors] = useState("清爽,水果");
-  const [dislikedFlavors, setDislikedFlavors] = useState("太甜,太濃,奶味");
-  const [timeOfDay, setTimeOfDay] = useState("night");
+  const [caffeineLimit, setCaffeineLimit] = useState("no_limit");
+  const [allergens, setAllergens] = useState("");
+  const [avoidIngredients, setAvoidIngredients] = useState("");
+  const [preferredFlavors, setPreferredFlavors] = useState("");
+  const [dislikedFlavors, setDislikedFlavors] = useState("");
+  const [timeOfDay, setTimeOfDay] = useState("");
 
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<ApiResult | null>(null);
@@ -99,16 +97,16 @@ export default function HomePage() {
       brandPreference: [],
       topK: 5,
       maxSameBrandInTopK: 1,
-      agentCandidateLimit: 20
+      agentCandidateLimit: 20,
     };
 
     try {
       const res = await fetch("/api/recommend", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(body)
+        body: JSON.stringify(body),
       });
 
       const data = await res.json();
@@ -116,7 +114,7 @@ export default function HomePage() {
     } catch (err) {
       setResult({
         error: "Fetch failed",
-        detail: err instanceof Error ? err.message : String(err)
+        detail: err instanceof Error ? err.message : String(err),
       });
     } finally {
       setLoading(false);
@@ -302,8 +300,8 @@ export default function HomePage() {
                   {drink.brand || "未知品牌"} - {drink.name || "未知飲料"}
                 </strong>
                 <p>
-                  {drink.customOrder || "依店家預設"}｜
-                  {drink.price ?? "未知"} 元
+                  {drink.customOrder || "依店家預設"}｜{drink.price ?? "未知"}{" "}
+                  元
                 </p>
                 <p>{drink.reason || "沒有提供理由"}</p>
               </div>
