@@ -45,9 +45,22 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className="title">🧋 台灣手搖飲 AI 推薦系統</h1>
+      <h1 className="title">
+
+        🧋 DrinkMind AI
+
+      </h1>
+
       <p className="subtitle">
+
+        台灣手搖飲智能推薦系統
+
       </p>
+      <div className="badge-row">
+        <span className="badge">Rule Engine</span>
+        <span className="badge">Multi-Agent</span>
+        <span className="badge">Drink Recommendation</span>
+      </div>
 
       <div className="card form-card">
         <h2>使用者需求</h2>
@@ -141,7 +154,14 @@ function App() {
         </div>
 
         <button className="recommend-button" onClick={handleRecommend}>
-          {loading ? "AI 分析中..." : "🔍 推薦飲料"}
+          {loading ? (
+            <span className="loading-content">
+              <span className="spinner"></span>
+              AI 分析中...
+            </span>
+          ) : (
+            "🔍 推薦飲料"
+          )}
         </button>
       </div>
 
@@ -151,8 +171,18 @@ function App() {
 
           <div className="best-card">
             <p className="drink-name">
-              {result.bestRecommendation.brand} {result.bestRecommendation.name}
-            </p>
+
+            🧋
+
+            {" "}
+
+            {result.bestRecommendation.brand}
+
+            {" "}
+
+            {result.bestRecommendation.name}
+
+          </p>
             <p className="info-row">價格：{result.bestRecommendation.price}</p>
             <p className="info-row">點法：{result.bestRecommendation.customOrder}</p>
             <p className="info-row">理由：{result.bestRecommendation.reason}</p>
