@@ -10,21 +10,30 @@ function App() {
   const [loading, setLoading] =
   useState(false);
 
-  const [preference, setPreference] = useState<UserPreference>({
+  const [preference, setPreference] =
+  useState<UserPreference>({
 
-    budget: "",
+    query: "",
 
-    sweetness: "less",
+    sweetnessMax: "less",
+
+    icePreference: "less",
+
+    budgetMax: 70,
 
     caffeineLimit: "low",
 
-    avoidMilk: false,
+    allergens: [],
 
-    allergen: "",
+    avoidIngredients: [],
 
-    deliveryTime: "",
+    preferredFlavors: [],
 
-    note: ""
+    dislikedFlavors: [],
+
+    timeOfDay: "night",
+
+    brandPreference: []
 
   });
 
@@ -67,28 +76,68 @@ function App() {
 
         <div className="form-grid">
           <div className="form-item">
-            <label>預算</label>
+            <label>需求描述</label>
             <input
-              type="number"
-              placeholder="例如：70"
-              value={preference.budget}
+              type="text"
+              placeholder="例如：晚上想喝清爽一點，不要太甜"
+              value={preference.query}
               onChange={(e) =>
-                setPreference({ ...preference, budget: e.target.value })
+                setPreference({
+                  ...preference,
+                  query: e.target.value,
+                })
               }
             />
           </div>
 
           <div className="form-item">
-            <label>甜度偏好</label>
-            <select
-              value={preference.sweetness}
+            <label>預算上限</label>
+            <input
+              type="number"
+              placeholder="例如：70"
+              value={preference.budgetMax}
               onChange={(e) =>
-                setPreference({ ...preference, sweetness: e.target.value })
+                setPreference({
+                  ...preference,
+                  budgetMax: Number(e.target.value),
+                })
+              }
+            />
+          </div>
+
+          <div className="form-item">
+            <label>最高甜度</label>
+            <select
+              value={preference.sweetnessMax}
+              onChange={(e) =>
+                setPreference({
+                  ...preference,
+                  sweetnessMax: e.target.value,
+                })
               }
             >
               <option value="none">無糖</option>
               <option value="less">微糖</option>
+              <option value="half">半糖</option>
               <option value="normal">正常糖</option>
+            </select>
+          </div>
+
+          <div className="form-item">
+            <label>冰量偏好</label>
+            <select
+              value={preference.icePreference}
+              onChange={(e) =>
+                setPreference({
+                  ...preference,
+                  icePreference: e.target.value,
+                })
+              }
+            >
+              <option value="none">去冰</option>
+              <option value="less">少冰</option>
+              <option value="normal">正常冰</option>
+              <option value="hot">熱飲</option>
             </select>
           </div>
 
@@ -97,12 +146,34 @@ function App() {
             <select
               value={preference.caffeineLimit}
               onChange={(e) =>
-                setPreference({ ...preference, caffeineLimit: e.target.value })
+                setPreference({
+                  ...preference,
+                  caffeineLimit: e.target.value as UserPreference["caffeineLimit"],
+                })
               }
             >
+              <option value="none">完全不要咖啡因</option>
               <option value="low">低咖啡因</option>
               <option value="medium">中咖啡因</option>
-              <option value="none">不限</option>
+              <option value="high">可接受高咖啡因</option>
+              <option value="no_limit">不限</option>
+            </select>
+          </div>
+
+          <div className="form-item">
+            <label>飲用時間</label>
+            <select
+              value={preference.timeOfDay}
+              onChange={(e) =>
+                setPreference({
+                  ...preference,
+                  timeOfDay: e.target.value as UserPreference["timeOfDay"],
+                })
+              }
+            >
+              <option value="morning">早上</option>
+              <option value="afternoon">下午</option>
+              <option value="night">晚上</option>
             </select>
           </div>
 
@@ -111,46 +182,90 @@ function App() {
             <input
               type="text"
               placeholder="例如：牛奶、花生"
-              value={preference.allergen}
+              value={preference.allergens.join("、")}
               onChange={(e) =>
-                setPreference({ ...preference, allergen: e.target.value })
+                setPreference({
+                  ...preference,
+                  allergens: e.target.value
+                    .split(/[、,，]/)
+                    .map((item) => item.trim())
+                    .filter(Boolean),
+                })
               }
             />
           </div>
 
           <div className="form-item">
-            <label>最大外送時間</label>
+            <label>避免成分</label>
             <input
-              type="number"
-              placeholder="例如：30"
-              value={preference.deliveryTime}
+              type="text"
+              placeholder="例如：奶類、珍珠"
+              value={preference.avoidIngredients.join("、")}
               onChange={(e) =>
-                setPreference({ ...preference, deliveryTime: e.target.value })
+                setPreference({
+                  ...preference,
+                  avoidIngredients: e.target.value
+                    .split(/[、,，]/)
+                    .map((item) => item.trim())
+                    .filter(Boolean),
+                })
               }
             />
           </div>
 
-          <div className="form-item checkbox-row">
+          <div className="form-item">
+            <label>喜歡的風味</label>
             <input
-              type="checkbox"
-              checked={preference.avoidMilk}
+              type="text"
+              placeholder="例如：清爽、茶香、水果"
+              value={preference.preferredFlavors.join("、")}
               onChange={(e) =>
-                setPreference({ ...preference, avoidMilk: e.target.checked })
+                setPreference({
+                  ...preference,
+                  preferredFlavors: e.target.value
+                    .split(/[、,，]/)
+                    .map((item) => item.trim())
+                    .filter(Boolean),
+                })
               }
             />
-            <label>不要奶類</label>
           </div>
-        </div>
 
-        <div className="form-item" style={{ marginTop: "20px" }}>
-          <label>其他需求</label>
-          <textarea
-            placeholder="例如：晚上想喝清爽一點"
-            value={preference.note}
-            onChange={(e) =>
-              setPreference({ ...preference, note: e.target.value })
-            }
-          />
+          <div className="form-item">
+            <label>不喜歡的風味</label>
+            <input
+              type="text"
+              placeholder="例如：太甜、奶味重"
+              value={preference.dislikedFlavors.join("、")}
+              onChange={(e) =>
+                setPreference({
+                  ...preference,
+                  dislikedFlavors: e.target.value
+                    .split(/[、,，]/)
+                    .map((item) => item.trim())
+                    .filter(Boolean),
+                })
+              }
+            />
+          </div>
+
+          <div className="form-item">
+            <label>品牌偏好</label>
+            <input
+              type="text"
+              placeholder="例如：五十嵐、可不可"
+              value={preference.brandPreference.join("、")}
+              onChange={(e) =>
+                setPreference({
+                  ...preference,
+                  brandPreference: e.target.value
+                    .split(/[、,，]/)
+                    .map((item) => item.trim())
+                    .filter(Boolean),
+                })
+              }
+            />
+          </div>
         </div>
 
         <button className="recommend-button" onClick={handleRecommend}>
@@ -171,21 +286,11 @@ function App() {
 
           <div className="best-card">
             <p className="drink-name">
-
-            🧋
-
-            {" "}
-
-            {result.bestRecommendation.brand}
-
-            {" "}
-
-            {result.bestRecommendation.name}
-
-          </p>
-            <p className="info-row">價格：{result.bestRecommendation.price}</p>
-            <p className="info-row">點法：{result.bestRecommendation.customOrder}</p>
-            <p className="info-row">理由：{result.bestRecommendation.reason}</p>
+              🧋 {result.bestChoice.brand} {result.bestChoice.name}
+            </p>
+            <p className="info-row">價格：{result.bestChoice.price}</p>
+            <p className="info-row">點法：{result.bestChoice.customOrder}</p>
+            <p className="info-row">理由：{result.bestChoice.reason}</p>
           </div>
 
           <h2 className="section-title">🥤 備選飲料</h2>
@@ -195,10 +300,17 @@ function App() {
             </div>
           ))}
 
+          <h2 className="section-title">🧠 質疑與檢查</h2>
+          {result.criticNotes.map((note, index) => (
+            <div className="list-card" key={index}>
+              {note}
+            </div>
+          ))}
+
           <h2 className="section-title">❌ 不推薦原因</h2>
-          {result.rejectedReasons.map((reason, index) => (
+          {result.notRecommended.map((drink, index) => (
             <div className="list-card reject-card" key={index}>
-              {reason}
+              {drink.name}：{drink.reason}
             </div>
           ))}
 
@@ -206,15 +318,15 @@ function App() {
           <div className="agent-grid">
             <div className="agent-card">
               <h3>Agent 1 推薦者</h3>
-              <p>{result.agentSummary.agent1}</p>
+              <p>{result.agentTrace.recommenderSummary}</p>
             </div>
             <div className="agent-card">
               <h3>Agent 2 質疑者</h3>
-              <p>{result.agentSummary.agent2}</p>
+              <p>{result.agentTrace.criticSummary}</p>
             </div>
             <div className="agent-card">
               <h3>Agent 3 總結者</h3>
-              <p>{result.agentSummary.agent3}</p>
+              <p>{result.agentTrace.judgeSummary}</p>
             </div>
           </div>
         </div>
