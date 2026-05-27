@@ -1,1124 +1,9221 @@
 [
-    {
-        "id": "guiji_001",
-        "brand": "龜記",
-        "name": "極品紅茶",
-        "category": "純茶",
-        "base": "紅茶",
-        "price": 40,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "紅茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "三分糖",
-            "五分糖",
-            "八分糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "茶感",
-            "清爽",
-            "經典"
-        ],
-        "healthTags": [
-            "無奶",
-            "低熱量"
-        ],
-        "note": "紅茶含咖啡因，晚上低咖啡因需求下不建議作為首選"
-    },
-    {
-        "id": "guiji_002",
-        "brand": "龜記",
-        "name": "翡翠綠茶",
-        "category": "純茶",
-        "base": "綠茶",
-        "price": 40,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "綠茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "三分糖",
-            "五分糖",
-            "八分糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "茶感",
-            "清爽",
-            "微澀"
-        ],
-        "healthTags": [
-            "無奶",
-            "低熱量"
-        ],
-        "note": "綠茶含咖啡因，建議低咖啡因需求者避免晚間飲用"
-    },
-    {
-        "id": "guiji_003",
-        "brand": "龜記",
-        "name": "青四季春",
-        "category": "純茶",
-        "base": "四季春",
-        "price": 40,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "四季春茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "三分糖",
-            "五分糖",
-            "八分糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "清香",
-            "茶感",
-            "清爽"
-        ],
-        "healthTags": [
-            "無奶",
-            "低熱量"
-        ],
-        "note": "茶類飲品含咖啡因"
-    },
-    {
-        "id": "guiji_004",
-        "brand": "龜記",
-        "name": "三韻紅萱",
-        "category": "純茶",
-        "base": "紅萱茶",
-        "price": 45,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "紅萱茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "三分糖",
-            "五分糖",
-            "八分糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "茶感",
-            "香氣",
-            "清爽"
-        ],
-        "healthTags": [
-            "無奶",
-            "低熱量"
-        ],
-        "note": "茶類飲品含咖啡因"
-    },
-    {
-        "id": "guiji_005",
-        "brand": "龜記",
-        "name": "碎銀普洱茶",
-        "category": "純茶",
-        "base": "普洱茶",
-        "price": 45,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "普洱茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "三分糖",
-            "五分糖",
-            "八分糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "茶感",
-            "醇厚",
-            "熟香"
-        ],
-        "healthTags": [
-            "無奶",
-            "低熱量"
-        ],
-        "note": "普洱茶含咖啡因"
-    },
-    {
-        "id": "guiji_006",
-        "brand": "龜記",
-        "name": "鮮果百香紅茶",
-        "category": "水果茶",
-        "base": "紅茶",
-        "price": 55,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "紅茶",
-            "百香果"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "三分糖",
-            "五分糖",
-            "八分糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "水果",
-            "酸甜",
-            "清爽"
-        ],
-        "healthTags": [
-            "無奶"
-        ],
-        "note": "以紅茶為基底，仍含咖啡因"
-    },
-    {
-        "id": "guiji_007",
-        "brand": "龜記",
-        "name": "柳丁翡翠",
-        "category": "水果茶",
-        "base": "綠茶",
-        "price": 60,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "綠茶",
-            "柳丁"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "三分糖",
-            "五分糖",
-            "八分糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "水果",
-            "酸甜",
-            "清爽"
-        ],
-        "healthTags": [
-            "無奶"
-        ],
-        "note": "以綠茶為基底，仍含咖啡因"
-    },
-    {
-        "id": "guiji_008",
-        "brand": "龜記",
-        "name": "極品奶茶",
-        "category": "奶茶",
-        "base": "紅茶",
-        "price": 55,
-        "caffeineLevel": "medium",
-        "containsMilk": true,
-        "ingredients": [
-            "紅茶",
-            "奶精"
-        ],
-        "allergens": [
-            "milk"
-        ],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "三分糖",
-            "五分糖",
-            "八分糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "奶香",
-            "茶感",
-            "經典"
-        ],
-        "healthTags": [
-            "含奶",
-            "含咖啡因"
-        ],
-        "note": "含奶類與咖啡因，乳糖不耐或低咖啡因需求者不建議"
-    },
-    {
-        "id": "guiji_009",
-        "brand": "龜記",
-        "name": "極品鮮乳茶",
-        "category": "鮮奶茶",
-        "base": "紅茶",
-        "price": 70,
-        "caffeineLevel": "medium",
-        "containsMilk": true,
-        "ingredients": [
-            "紅茶",
-            "鮮乳"
-        ],
-        "allergens": [
-            "milk"
-        ],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "三分糖",
-            "五分糖",
-            "八分糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "奶香",
-            "茶感",
-            "濃郁"
-        ],
-        "healthTags": [
-            "含奶",
-            "含咖啡因"
-        ],
-        "note": "含鮮乳與咖啡因"
-    },
-    {
-        "id": "guiji_010",
-        "brand": "龜記",
-        "name": "蜂蜜綠茶",
-        "category": "蜂蜜茶",
-        "base": "綠茶",
-        "price": 55,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "綠茶",
-            "蜂蜜"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "固定甜"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "蜂蜜",
-            "清爽",
-            "甜感"
-        ],
-        "healthTags": [
-            "無奶"
-        ],
-        "note": "蜂蜜甜度可能固定；以綠茶為基底，含咖啡因"
-    },
-    {
-        "id": "50lan_001",
-        "brand": "50嵐",
-        "name": "茉莉綠茶",
-        "category": "純茶",
-        "base": "綠茶",
-        "price": 30,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "綠茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "清爽",
-            "茶感",
-            "茉莉香"
-        ],
-        "healthTags": [
-            "無奶",
-            "低熱量"
-        ],
-        "note": "綠茶含咖啡因"
-    },
-    {
-        "id": "50lan_002",
-        "brand": "50嵐",
-        "name": "阿薩姆紅茶",
-        "category": "純茶",
-        "base": "紅茶",
-        "price": 30,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "紅茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "茶感",
-            "經典",
-            "清爽"
-        ],
-        "healthTags": [
-            "無奶",
-            "低熱量"
-        ],
-        "note": "紅茶含咖啡因"
-    },
-    {
-        "id": "50lan_003",
-        "brand": "50嵐",
-        "name": "四季春青茶",
-        "category": "純茶",
-        "base": "青茶",
-        "price": 30,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "青茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "清香",
-            "茶感",
-            "清爽"
-        ],
-        "healthTags": [
-            "無奶",
-            "低熱量"
-        ],
-        "note": "茶類飲品含咖啡因"
-    },
-    {
-        "id": "50lan_004",
-        "brand": "50嵐",
-        "name": "黃金烏龍",
-        "category": "純茶",
-        "base": "烏龍茶",
-        "price": 30,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "烏龍茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "茶感",
-            "烘焙香",
-            "清爽"
-        ],
-        "healthTags": [
-            "無奶",
-            "低熱量"
-        ],
-        "note": "烏龍茶含咖啡因"
-    },
-    {
-        "id": "50lan_005",
-        "brand": "50嵐",
-        "name": "波霸奶茶",
-        "category": "奶茶",
-        "base": "紅茶",
-        "price": 50,
-        "caffeineLevel": "medium",
-        "containsMilk": true,
-        "ingredients": [
-            "紅茶",
-            "奶精",
-            "波霸"
-        ],
-        "allergens": [
-            "milk"
-        ],
-        "availableSweetness": [
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "奶香",
-            "甜感",
-            "咀嚼感"
-        ],
-        "healthTags": [
-            "含奶",
-            "含咖啡因"
-        ],
-        "note": "含奶類與咖啡因，且配料熱量較高"
-    },
-    {
-        "id": "50lan_006",
-        "brand": "50嵐",
-        "name": "珍珠奶茶",
-        "category": "奶茶",
-        "base": "紅茶",
-        "price": 50,
-        "caffeineLevel": "medium",
-        "containsMilk": true,
-        "ingredients": [
-            "紅茶",
-            "奶精",
-            "珍珠"
-        ],
-        "allergens": [
-            "milk"
-        ],
-        "availableSweetness": [
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "奶香",
-            "甜感",
-            "咀嚼感"
-        ],
-        "healthTags": [
-            "含奶",
-            "含咖啡因"
-        ],
-        "note": "含奶類與咖啡因"
-    },
-    {
-        "id": "50lan_007",
-        "brand": "50嵐",
-        "name": "波霸紅茶拿鐵",
-        "category": "鮮奶茶",
-        "base": "紅茶",
-        "price": 65,
-        "caffeineLevel": "medium",
-        "containsMilk": true,
-        "ingredients": [
-            "紅茶",
-            "鮮乳",
-            "波霸"
-        ],
-        "allergens": [
-            "milk"
-        ],
-        "availableSweetness": [
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "奶香",
-            "茶感",
-            "咀嚼感"
-        ],
-        "healthTags": [
-            "含奶",
-            "含咖啡因"
-        ],
-        "note": "含鮮乳、配料與咖啡因"
-    },
-    {
-        "id": "50lan_008",
-        "brand": "50嵐",
-        "name": "檸檬綠茶",
-        "category": "水果茶",
-        "base": "綠茶",
-        "price": 50,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "綠茶",
-            "檸檬"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "酸甜",
-            "清爽",
-            "水果"
-        ],
-        "healthTags": [
-            "無奶"
-        ],
-        "note": "以綠茶為基底，含咖啡因"
-    },
-    {
-        "id": "50lan_009",
-        "brand": "50嵐",
-        "name": "梅子綠茶",
-        "category": "調味茶",
-        "base": "綠茶",
-        "price": 45,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "綠茶",
-            "梅子"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "酸甜",
-            "鹹甜",
-            "清爽"
-        ],
-        "healthTags": [
-            "無奶"
-        ],
-        "note": "以綠茶為基底，含咖啡因"
-    },
-    {
-        "id": "50lan_010",
-        "brand": "50嵐",
-        "name": "多多綠茶",
-        "category": "多多茶",
-        "base": "綠茶",
-        "price": 50,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "綠茶",
-            "多多"
-        ],
-        "allergens": [
-            "milk"
-        ],
-        "availableSweetness": [
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "酸甜",
-            "乳酸",
-            "清爽"
-        ],
-        "healthTags": [
-            "含乳酸飲品",
-            "含咖啡因"
-        ],
-        "note": "多多可能含乳製成分；以綠茶為基底，含咖啡因"
-    },
-    {
-        "id": "kebuke_001",
-        "brand": "可不可熟成紅茶",
-        "name": "熟成紅茶",
-        "category": "純茶",
-        "base": "紅茶",
-        "price": 35,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "紅茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "茶感",
-            "熟香",
-            "經典"
-        ],
-        "healthTags": [
-            "無奶",
-            "低熱量"
-        ],
-        "note": "紅茶含咖啡因"
-    },
-    {
-        "id": "kebuke_002",
-        "brand": "可不可熟成紅茶",
-        "name": "麗春紅茶",
-        "category": "純茶",
-        "base": "紅茶",
-        "price": 35,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "紅茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "茶感",
-            "花香",
-            "清爽"
-        ],
-        "healthTags": [
-            "無奶",
-            "低熱量"
-        ],
-        "note": "紅茶含咖啡因"
-    },
-    {
-        "id": "kebuke_003",
-        "brand": "可不可熟成紅茶",
-        "name": "胭脂紅茶",
-        "category": "純茶",
-        "base": "紅茶",
-        "price": 40,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "紅茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "茶感",
-            "果香",
-            "清爽"
-        ],
-        "healthTags": [
-            "無奶",
-            "低熱量"
-        ],
-        "note": "紅茶含咖啡因"
-    },
-    {
-        "id": "kebuke_004",
-        "brand": "可不可熟成紅茶",
-        "name": "雪花冷露",
-        "category": "冬瓜茶",
-        "base": "冬瓜",
-        "price": 35,
-        "caffeineLevel": "none",
-        "containsMilk": false,
-        "ingredients": [
-            "冬瓜"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "固定甜"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "甜感",
-            "古早味",
-            "清爽"
-        ],
-        "healthTags": [
-            "無奶",
-            "無咖啡因"
-        ],
-        "note": "冬瓜基底通常甜度較固定，低糖需求者需注意"
-    },
-    {
-        "id": "kebuke_005",
-        "brand": "可不可熟成紅茶",
-        "name": "春芽冷露",
-        "category": "調味茶",
-        "base": "冬瓜綠茶",
-        "price": 35,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "冬瓜",
-            "綠茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "固定甜"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "甜感",
-            "茶感",
-            "清爽"
-        ],
-        "healthTags": [
-            "無奶"
-        ],
-        "note": "含綠茶咖啡因，且冬瓜基底甜度可能較固定"
-    },
-    {
-        "id": "kebuke_006",
-        "brand": "可不可熟成紅茶",
-        "name": "熟成冷露",
-        "category": "調味茶",
-        "base": "冬瓜紅茶",
-        "price": 35,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "冬瓜",
-            "紅茶"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "固定甜"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "甜感",
-            "茶感",
-            "古早味"
-        ],
-        "healthTags": [
-            "無奶"
-        ],
-        "note": "含紅茶咖啡因，且冬瓜基底甜度可能較固定"
-    },
-    {
-        "id": "kebuke_007",
-        "brand": "可不可熟成紅茶",
-        "name": "白玉歐蕾",
-        "category": "鮮奶茶",
-        "base": "紅茶",
-        "price": 65,
-        "caffeineLevel": "medium",
-        "containsMilk": true,
-        "ingredients": [
-            "紅茶",
-            "鮮乳",
-            "白玉"
-        ],
-        "allergens": [
-            "milk"
-        ],
-        "availableSweetness": [
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "奶香",
-            "茶感",
-            "咀嚼感"
-        ],
-        "healthTags": [
-            "含奶",
-            "含咖啡因"
-        ],
-        "note": "含鮮乳與咖啡因"
-    },
-    {
-        "id": "kebuke_008",
-        "brand": "可不可熟成紅茶",
-        "name": "熟成歐蕾",
-        "category": "鮮奶茶",
-        "base": "紅茶",
-        "price": 55,
-        "caffeineLevel": "medium",
-        "containsMilk": true,
-        "ingredients": [
-            "紅茶",
-            "鮮乳"
-        ],
-        "allergens": [
-            "milk"
-        ],
-        "availableSweetness": [
-            "無糖",
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "奶香",
-            "茶感",
-            "濃郁"
-        ],
-        "healthTags": [
-            "含奶",
-            "含咖啡因"
-        ],
-        "note": "含鮮乳與咖啡因"
-    },
-    {
-        "id": "kebuke_009",
-        "brand": "可不可熟成紅茶",
-        "name": "冷露歐蕾",
-        "category": "鮮奶茶",
-        "base": "冬瓜鮮乳",
-        "price": 55,
-        "caffeineLevel": "none",
-        "containsMilk": true,
-        "ingredients": [
-            "冬瓜",
-            "鮮乳"
-        ],
-        "allergens": [
-            "milk"
-        ],
-        "availableSweetness": [
-            "固定甜"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "奶香",
-            "甜感",
-            "古早味"
-        ],
-        "healthTags": [
-            "含奶",
-            "無咖啡因"
-        ],
-        "note": "無茶基底但含鮮乳；冬瓜甜度可能較固定"
-    },
-    {
-        "id": "kebuke_010",
-        "brand": "可不可熟成紅茶",
-        "name": "檸檬熟成",
-        "category": "水果茶",
-        "base": "紅茶",
-        "price": 55,
-        "caffeineLevel": "medium",
-        "containsMilk": false,
-        "ingredients": [
-            "紅茶",
-            "檸檬"
-        ],
-        "allergens": [],
-        "availableSweetness": [
-            "微糖",
-            "半糖",
-            "少糖",
-            "正常"
-        ],
-        "availableIce": [
-            "去冰",
-            "微冰",
-            "少冰",
-            "正常冰"
-        ],
-        "flavorTags": [
-            "酸甜",
-            "茶感",
-            "清爽"
-        ],
-        "healthTags": [
-            "無奶"
-        ],
-        "note": "以紅茶為基底，含咖啡因"
-    }
+  {
+    "id": "50lan_001_m",
+    "brand": "50嵐",
+    "name": "茉莉綠茶M",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_001_l",
+    "brand": "50嵐",
+    "name": "茉莉綠茶L",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_002_m",
+    "brand": "50嵐",
+    "name": "阿薩姆紅茶M",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_002_l",
+    "brand": "50嵐",
+    "name": "阿薩姆紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_003_m",
+    "brand": "50嵐",
+    "name": "四季春青茶M",
+    "category": "純茶",
+    "base": "青茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "青茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_003_l",
+    "brand": "50嵐",
+    "name": "四季春青茶L",
+    "category": "純茶",
+    "base": "青茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "青茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_004_m",
+    "brand": "50嵐",
+    "name": "黃金烏龍M",
+    "category": "純茶",
+    "base": "烏龍茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_004_l",
+    "brand": "50嵐",
+    "name": "黃金烏龍L",
+    "category": "純茶",
+    "base": "烏龍茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_005_m",
+    "brand": "50嵐",
+    "name": "波霸奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "波霸",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_005_l",
+    "brand": "50嵐",
+    "name": "波霸奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "波霸",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_006_m",
+    "brand": "50嵐",
+    "name": "珍珠奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "珍珠",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_006_l",
+    "brand": "50嵐",
+    "name": "珍珠奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "珍珠",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_007_m",
+    "brand": "50嵐",
+    "name": "椰果奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "椰果",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_007_l",
+    "brand": "50嵐",
+    "name": "椰果奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "椰果",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_008_m",
+    "brand": "50嵐",
+    "name": "布丁奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "布丁",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_008_l",
+    "brand": "50嵐",
+    "name": "布丁奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "布丁",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_009_m",
+    "brand": "50嵐",
+    "name": "冰淇淋紅茶M",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶",
+      "冰淇淋"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_009_l",
+    "brand": "50嵐",
+    "name": "冰淇淋紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶",
+      "冰淇淋"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_010_m",
+    "brand": "50嵐",
+    "name": "波霸紅茶拿鐵M",
+    "category": "鮮奶茶",
+    "base": "紅茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶",
+      "波霸"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_010_l",
+    "brand": "50嵐",
+    "name": "波霸紅茶拿鐵L",
+    "category": "鮮奶茶",
+    "base": "紅茶",
+    "price": 75,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶",
+      "波霸"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_011_m",
+    "brand": "50嵐",
+    "name": "珍珠紅茶拿鐵M",
+    "category": "鮮奶茶",
+    "base": "紅茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶",
+      "珍珠"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_011_l",
+    "brand": "50嵐",
+    "name": "珍珠紅茶拿鐵L",
+    "category": "鮮奶茶",
+    "base": "紅茶",
+    "price": 75,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶",
+      "珍珠"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_012_m",
+    "brand": "50嵐",
+    "name": "檸檬綠茶M",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_012_l",
+    "brand": "50嵐",
+    "name": "檸檬綠茶L",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_013_m",
+    "brand": "50嵐",
+    "name": "梅子綠茶M",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "梅子"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_013_l",
+    "brand": "50嵐",
+    "name": "梅子綠茶L",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "梅子"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_014_m",
+    "brand": "50嵐",
+    "name": "多多綠茶M",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "綠茶",
+      "多多"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_014_l",
+    "brand": "50嵐",
+    "name": "多多綠茶L",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "綠茶",
+      "多多"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_015_m",
+    "brand": "50嵐",
+    "name": "八冰綠M",
+    "category": "特調",
+    "base": "特調",
+    "price": 50,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "八冰綠"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "50lan_015_l",
+    "brand": "50嵐",
+    "name": "八冰綠L",
+    "category": "特調",
+    "base": "特調",
+    "price": 60,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "八冰綠"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_001_m",
+    "brand": "清心福全",
+    "name": "烏龍綠茶M",
+    "category": "純茶",
+    "base": "烏龍綠茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_001_l",
+    "brand": "清心福全",
+    "name": "烏龍綠茶L",
+    "category": "純茶",
+    "base": "烏龍綠茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_002_m",
+    "brand": "清心福全",
+    "name": "特級綠茶M",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_002_l",
+    "brand": "清心福全",
+    "name": "特級綠茶L",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_003_m",
+    "brand": "清心福全",
+    "name": "錫蘭紅茶M",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_003_l",
+    "brand": "清心福全",
+    "name": "錫蘭紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_004_m",
+    "brand": "清心福全",
+    "name": "極品菁茶M",
+    "category": "純茶",
+    "base": "菁茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "菁茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_004_l",
+    "brand": "清心福全",
+    "name": "極品菁茶L",
+    "category": "純茶",
+    "base": "菁茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "菁茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_005_m",
+    "brand": "清心福全",
+    "name": "高山茶M",
+    "category": "純茶",
+    "base": "特調",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "高山茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_005_l",
+    "brand": "清心福全",
+    "name": "高山茶L",
+    "category": "純茶",
+    "base": "特調",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "高山茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_006_m",
+    "brand": "清心福全",
+    "name": "普洱茶M",
+    "category": "純茶",
+    "base": "普洱茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "普洱茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_006_l",
+    "brand": "清心福全",
+    "name": "普洱茶L",
+    "category": "純茶",
+    "base": "普洱茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "普洱茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_007_m",
+    "brand": "清心福全",
+    "name": "奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_007_l",
+    "brand": "清心福全",
+    "name": "奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_008_m",
+    "brand": "清心福全",
+    "name": "珍珠奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "珍珠",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_008_l",
+    "brand": "清心福全",
+    "name": "珍珠奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "珍珠",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_009_m",
+    "brand": "清心福全",
+    "name": "布丁奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "布丁",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_009_l",
+    "brand": "清心福全",
+    "name": "布丁奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "布丁",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_010_m",
+    "brand": "清心福全",
+    "name": "椰果奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "椰果",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_010_l",
+    "brand": "清心福全",
+    "name": "椰果奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "椰果",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_011_m",
+    "brand": "清心福全",
+    "name": "鮮奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_011_l",
+    "brand": "清心福全",
+    "name": "鮮奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 70,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_012_m",
+    "brand": "清心福全",
+    "name": "珍珠鮮奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 60,
+    "caffeineLevel": "none",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "珍珠",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "無咖啡因"
+    ],
+    "note": "含奶類成分；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_012_l",
+    "brand": "清心福全",
+    "name": "珍珠鮮奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 75,
+    "caffeineLevel": "none",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "珍珠",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "無咖啡因"
+    ],
+    "note": "含奶類成分；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_013_m",
+    "brand": "清心福全",
+    "name": "多多綠茶M",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "綠茶",
+      "多多"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_013_l",
+    "brand": "清心福全",
+    "name": "多多綠茶L",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "綠茶",
+      "多多"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_014_m",
+    "brand": "清心福全",
+    "name": "蜂蜜綠茶M",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "蜂蜜"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "甜感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_014_l",
+    "brand": "清心福全",
+    "name": "蜂蜜綠茶L",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "蜂蜜"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "甜感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_015_m",
+    "brand": "清心福全",
+    "name": "檸檬綠茶M",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "chingshin_015_l",
+    "brand": "清心福全",
+    "name": "檸檬綠茶L",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_001_l",
+    "brand": "麻古茶坊",
+    "name": "高山金萱茶L",
+    "category": "純茶",
+    "base": "金萱茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "金萱茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_002_l",
+    "brand": "麻古茶坊",
+    "name": "翡翠綠茶L",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_003_l",
+    "brand": "麻古茶坊",
+    "name": "錫蘭紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_004_l",
+    "brand": "麻古茶坊",
+    "name": "文山清茶L",
+    "category": "純茶",
+    "base": "清茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "清茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_005_l",
+    "brand": "麻古茶坊",
+    "name": "金萱雙QL",
+    "category": "純茶",
+    "base": "金萱茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "金萱茶",
+      "雙Q"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_006_l",
+    "brand": "麻古茶坊",
+    "name": "芝芝金萱L",
+    "category": "奶蓋",
+    "base": "金萱茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "金萱茶",
+      "奶蓋"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_007_l",
+    "brand": "麻古茶坊",
+    "name": "芝芝翡翠綠茶L",
+    "category": "奶蓋",
+    "base": "綠茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "綠茶",
+      "奶蓋"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_008_l",
+    "brand": "麻古茶坊",
+    "name": "芝芝錫蘭紅茶L",
+    "category": "奶蓋",
+    "base": "紅茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶",
+      "奶蓋"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_009_l",
+    "brand": "麻古茶坊",
+    "name": "芝芝芒果果粒L",
+    "category": "奶蓋",
+    "base": "芒果",
+    "price": 95,
+    "caffeineLevel": "low",
+    "containsMilk": true,
+    "ingredients": [
+      "芒果",
+      "奶蓋"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_010_l",
+    "brand": "麻古茶坊",
+    "name": "柳橙果粒茶L",
+    "category": "水果茶",
+    "base": "特調",
+    "price": 75,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "柳橙果粒茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_011_l",
+    "brand": "麻古茶坊",
+    "name": "葡萄柚果粒茶L",
+    "category": "水果茶",
+    "base": "葡萄柚",
+    "price": 75,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "葡萄柚"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_012_l",
+    "brand": "麻古茶坊",
+    "name": "香橙果粒茶L",
+    "category": "水果茶",
+    "base": "香橙",
+    "price": 75,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "香橙"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_013_l",
+    "brand": "麻古茶坊",
+    "name": "百香雙Q果L",
+    "category": "水果茶",
+    "base": "百香果",
+    "price": 75,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "百香果",
+      "雙Q"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_014_l",
+    "brand": "麻古茶坊",
+    "name": "檸檬綠茶L",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "macu_015_l",
+    "brand": "麻古茶坊",
+    "name": "波霸奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "波霸",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_001_m",
+    "brand": "可不可熟成紅茶",
+    "name": "熟成紅茶M",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_001_l",
+    "brand": "可不可熟成紅茶",
+    "name": "熟成紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_002_m",
+    "brand": "可不可熟成紅茶",
+    "name": "麗春紅茶M",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_002_l",
+    "brand": "可不可熟成紅茶",
+    "name": "麗春紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_003_m",
+    "brand": "可不可熟成紅茶",
+    "name": "胭脂紅茶M",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_003_l",
+    "brand": "可不可熟成紅茶",
+    "name": "胭脂紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_004_m",
+    "brand": "可不可熟成紅茶",
+    "name": "雪花冷露M",
+    "category": "冬瓜茶",
+    "base": "特調",
+    "price": 35,
+    "caffeineLevel": "none",
+    "containsMilk": false,
+    "ingredients": [
+      "雪花冷露"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "無咖啡因"
+    ],
+    "note": "甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_004_l",
+    "brand": "可不可熟成紅茶",
+    "name": "雪花冷露L",
+    "category": "冬瓜茶",
+    "base": "特調",
+    "price": 40,
+    "caffeineLevel": "none",
+    "containsMilk": false,
+    "ingredients": [
+      "雪花冷露"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "無咖啡因"
+    ],
+    "note": "甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_005_m",
+    "brand": "可不可熟成紅茶",
+    "name": "春芽冷露M",
+    "category": "冬瓜茶",
+    "base": "特調",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "春芽冷露"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_005_l",
+    "brand": "可不可熟成紅茶",
+    "name": "春芽冷露L",
+    "category": "冬瓜茶",
+    "base": "特調",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "春芽冷露"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_006_m",
+    "brand": "可不可熟成紅茶",
+    "name": "熟成冷露M",
+    "category": "冬瓜茶",
+    "base": "特調",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "熟成冷露"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_006_l",
+    "brand": "可不可熟成紅茶",
+    "name": "熟成冷露L",
+    "category": "冬瓜茶",
+    "base": "特調",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "熟成冷露"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_007_m",
+    "brand": "可不可熟成紅茶",
+    "name": "白玉歐蕾M",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "白玉"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_007_l",
+    "brand": "可不可熟成紅茶",
+    "name": "白玉歐蕾L",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 75,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "白玉"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_008_m",
+    "brand": "可不可熟成紅茶",
+    "name": "熟成歐蕾M",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_008_l",
+    "brand": "可不可熟成紅茶",
+    "name": "熟成歐蕾L",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_009_m",
+    "brand": "可不可熟成紅茶",
+    "name": "冷露歐蕾M",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 55,
+    "caffeineLevel": "none",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "無咖啡因"
+    ],
+    "note": "含奶類成分；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_009_l",
+    "brand": "可不可熟成紅茶",
+    "name": "冷露歐蕾L",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 65,
+    "caffeineLevel": "none",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "無咖啡因"
+    ],
+    "note": "含奶類成分；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_010_m",
+    "brand": "可不可熟成紅茶",
+    "name": "麗春歐蕾M",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_010_l",
+    "brand": "可不可熟成紅茶",
+    "name": "麗春歐蕾L",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_011_m",
+    "brand": "可不可熟成紅茶",
+    "name": "胭脂歐蕾M",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_011_l",
+    "brand": "可不可熟成紅茶",
+    "name": "胭脂歐蕾L",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 70,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_012_m",
+    "brand": "可不可熟成紅茶",
+    "name": "檸檬熟成M",
+    "category": "水果茶",
+    "base": "檸檬",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_012_l",
+    "brand": "可不可熟成紅茶",
+    "name": "檸檬熟成L",
+    "category": "水果茶",
+    "base": "檸檬",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_013_m",
+    "brand": "可不可熟成紅茶",
+    "name": "白玉熟成M",
+    "category": "特調",
+    "base": "特調",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "白玉"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_013_l",
+    "brand": "可不可熟成紅茶",
+    "name": "白玉熟成L",
+    "category": "特調",
+    "base": "特調",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "白玉"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_014_m",
+    "brand": "可不可熟成紅茶",
+    "name": "春芽綠茶M",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_014_l",
+    "brand": "可不可熟成紅茶",
+    "name": "春芽綠茶L",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_015_m",
+    "brand": "可不可熟成紅茶",
+    "name": "熟成檸果M",
+    "category": "特調",
+    "base": "特調",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "熟成檸果"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "kebuke_015_l",
+    "brand": "可不可熟成紅茶",
+    "name": "熟成檸果L",
+    "category": "特調",
+    "base": "特調",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "熟成檸果"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_001_m",
+    "brand": "迷客夏",
+    "name": "英倫伯爵紅茶M",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_001_l",
+    "brand": "迷客夏",
+    "name": "英倫伯爵紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_002_m",
+    "brand": "迷客夏",
+    "name": "大正醇香紅茶M",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_002_l",
+    "brand": "迷客夏",
+    "name": "大正醇香紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_003_m",
+    "brand": "迷客夏",
+    "name": "高峰烏龍綠M",
+    "category": "純茶",
+    "base": "烏龍綠茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_003_l",
+    "brand": "迷客夏",
+    "name": "高峰烏龍綠L",
+    "category": "純茶",
+    "base": "烏龍綠茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_004_m",
+    "brand": "迷客夏",
+    "name": "決明大麥M",
+    "category": "純茶",
+    "base": "大麥茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "大麥茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_004_l",
+    "brand": "迷客夏",
+    "name": "決明大麥L",
+    "category": "純茶",
+    "base": "大麥茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "大麥茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_005_m",
+    "brand": "迷客夏",
+    "name": "青採翠玉M",
+    "category": "特調",
+    "base": "特調",
+    "price": 35,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "青採翠玉"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_005_l",
+    "brand": "迷客夏",
+    "name": "青採翠玉L",
+    "category": "特調",
+    "base": "特調",
+    "price": 40,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "青採翠玉"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_006_m",
+    "brand": "迷客夏",
+    "name": "伯爵紅茶拿鐵M",
+    "category": "鮮奶茶",
+    "base": "紅茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_006_l",
+    "brand": "迷客夏",
+    "name": "伯爵紅茶拿鐵L",
+    "category": "鮮奶茶",
+    "base": "紅茶",
+    "price": 70,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_007_m",
+    "brand": "迷客夏",
+    "name": "大正紅茶拿鐵M",
+    "category": "鮮奶茶",
+    "base": "紅茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_007_l",
+    "brand": "迷客夏",
+    "name": "大正紅茶拿鐵L",
+    "category": "鮮奶茶",
+    "base": "紅茶",
+    "price": 70,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_008_m",
+    "brand": "迷客夏",
+    "name": "珍珠紅茶拿鐵M",
+    "category": "鮮奶茶",
+    "base": "紅茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶",
+      "珍珠"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_008_l",
+    "brand": "迷客夏",
+    "name": "珍珠紅茶拿鐵L",
+    "category": "鮮奶茶",
+    "base": "紅茶",
+    "price": 75,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶",
+      "珍珠"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_009_m",
+    "brand": "迷客夏",
+    "name": "布丁紅茶拿鐵M",
+    "category": "鮮奶茶",
+    "base": "紅茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶",
+      "布丁"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_009_l",
+    "brand": "迷客夏",
+    "name": "布丁紅茶拿鐵L",
+    "category": "鮮奶茶",
+    "base": "紅茶",
+    "price": 75,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶",
+      "布丁"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_010_m",
+    "brand": "迷客夏",
+    "name": "芋頭鮮奶M",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 70,
+    "caffeineLevel": "none",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "無咖啡因"
+    ],
+    "note": "含奶類成分；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_010_l",
+    "brand": "迷客夏",
+    "name": "芋頭鮮奶L",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 90,
+    "caffeineLevel": "none",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "無咖啡因"
+    ],
+    "note": "含奶類成分；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_011_m",
+    "brand": "迷客夏",
+    "name": "珍珠鮮奶M",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 70,
+    "caffeineLevel": "none",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "珍珠",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "無咖啡因"
+    ],
+    "note": "含奶類成分；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_011_l",
+    "brand": "迷客夏",
+    "name": "珍珠鮮奶L",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 90,
+    "caffeineLevel": "none",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "珍珠",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "無咖啡因"
+    ],
+    "note": "含奶類成分；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_012_m",
+    "brand": "迷客夏",
+    "name": "仙草凍奶M",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 65,
+    "caffeineLevel": "none",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "仙草",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "無咖啡因"
+    ],
+    "note": "含奶類成分；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_012_l",
+    "brand": "迷客夏",
+    "name": "仙草凍奶L",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 85,
+    "caffeineLevel": "none",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "仙草",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "無咖啡因"
+    ],
+    "note": "含奶類成分；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_013_m",
+    "brand": "迷客夏",
+    "name": "手炒黑糖鮮奶M",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 70,
+    "caffeineLevel": "none",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "甜感"
+    ],
+    "healthTags": [
+      "含奶",
+      "無咖啡因"
+    ],
+    "note": "含奶類成分；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_013_l",
+    "brand": "迷客夏",
+    "name": "手炒黑糖鮮奶L",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 90,
+    "caffeineLevel": "none",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "甜感"
+    ],
+    "healthTags": [
+      "含奶",
+      "無咖啡因"
+    ],
+    "note": "含奶類成分；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_014_m",
+    "brand": "迷客夏",
+    "name": "柳丁綠茶M",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "柳丁"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_014_l",
+    "brand": "迷客夏",
+    "name": "柳丁綠茶L",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 70,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "柳丁"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_015_m",
+    "brand": "迷客夏",
+    "name": "冰糖洛神梅M",
+    "category": "水果茶",
+    "base": "洛神",
+    "price": 50,
+    "caffeineLevel": "none",
+    "containsMilk": false,
+    "ingredients": [
+      "洛神",
+      "梅子"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "無咖啡因"
+    ],
+    "note": "第一版資料，實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "milksha_015_l",
+    "brand": "迷客夏",
+    "name": "冰糖洛神梅L",
+    "category": "水果茶",
+    "base": "洛神",
+    "price": 60,
+    "caffeineLevel": "none",
+    "containsMilk": false,
+    "ingredients": [
+      "洛神",
+      "梅子"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "無咖啡因"
+    ],
+    "note": "第一版資料，實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_001_l",
+    "brand": "一沐日",
+    "name": "招牌紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_002_l",
+    "brand": "一沐日",
+    "name": "老派蕎麥茶L",
+    "category": "純茶",
+    "base": "蕎麥茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "蕎麥茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_003_l",
+    "brand": "一沐日",
+    "name": "油切蕎麥茶L",
+    "category": "純茶",
+    "base": "蕎麥茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "蕎麥茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_004_l",
+    "brand": "一沐日",
+    "name": "高山青茶L",
+    "category": "純茶",
+    "base": "青茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "青茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_005_l",
+    "brand": "一沐日",
+    "name": "日月潭紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_006_l",
+    "brand": "一沐日",
+    "name": "粉粿黑糖奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "粉粿",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感",
+      "甜感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_007_l",
+    "brand": "一沐日",
+    "name": "粉粿桂花檸檬L",
+    "category": "水果茶",
+    "base": "檸檬",
+    "price": 65,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "檸檬",
+      "粉粿"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "咀嚼感",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_008_l",
+    "brand": "一沐日",
+    "name": "逮丸奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_009_l",
+    "brand": "一沐日",
+    "name": "黃金蕎麥奶茶L",
+    "category": "奶茶",
+    "base": "蕎麥茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "蕎麥茶",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_010_l",
+    "brand": "一沐日",
+    "name": "黑糖粉粿鮮奶L",
+    "category": "鮮奶茶",
+    "base": "奶茶",
+    "price": 75,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "粉粿",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感",
+      "甜感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_011_l",
+    "brand": "一沐日",
+    "name": "荔枝烏龍L",
+    "category": "水果茶",
+    "base": "烏龍茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍茶",
+      "荔枝"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_012_l",
+    "brand": "一沐日",
+    "name": "荔枝蘆薈L",
+    "category": "水果茶",
+    "base": "荔枝",
+    "price": 70,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "荔枝",
+      "蘆薈"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_013_l",
+    "brand": "一沐日",
+    "name": "檸檬愛玉L",
+    "category": "水果茶",
+    "base": "檸檬",
+    "price": 65,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "檸檬",
+      "愛玉"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "咀嚼感",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_014_l",
+    "brand": "一沐日",
+    "name": "梅果招牌紅茶L",
+    "category": "水果茶",
+    "base": "紅茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶",
+      "梅子"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "yimuri_015_l",
+    "brand": "一沐日",
+    "name": "蜂蜜檸檬青茶L",
+    "category": "水果茶",
+    "base": "青茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "青茶",
+      "蜂蜜",
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "甜感",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_001_m",
+    "brand": "茶の魔手",
+    "name": "山楂烏龍M",
+    "category": "純茶",
+    "base": "烏龍茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_001_l",
+    "brand": "茶の魔手",
+    "name": "山楂烏龍L",
+    "category": "純茶",
+    "base": "烏龍茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_002_m",
+    "brand": "茶の魔手",
+    "name": "冬瓜茶M",
+    "category": "冬瓜茶",
+    "base": "冬瓜",
+    "price": 25,
+    "caffeineLevel": "none",
+    "containsMilk": false,
+    "ingredients": [
+      "冬瓜"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "甜感"
+    ],
+    "healthTags": [
+      "無奶",
+      "無咖啡因"
+    ],
+    "note": "甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_002_l",
+    "brand": "茶の魔手",
+    "name": "冬瓜茶L",
+    "category": "冬瓜茶",
+    "base": "冬瓜",
+    "price": 30,
+    "caffeineLevel": "none",
+    "containsMilk": false,
+    "ingredients": [
+      "冬瓜"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "甜感"
+    ],
+    "healthTags": [
+      "無奶",
+      "無咖啡因"
+    ],
+    "note": "甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_003_m",
+    "brand": "茶の魔手",
+    "name": "青茶M",
+    "category": "純茶",
+    "base": "青茶",
+    "price": 25,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "青茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_003_l",
+    "brand": "茶の魔手",
+    "name": "青茶L",
+    "category": "純茶",
+    "base": "青茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "青茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_004_m",
+    "brand": "茶の魔手",
+    "name": "綠茶M",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 25,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_004_l",
+    "brand": "茶の魔手",
+    "name": "綠茶L",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_005_m",
+    "brand": "茶の魔手",
+    "name": "紅茶M",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 25,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_005_l",
+    "brand": "茶の魔手",
+    "name": "紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_006_m",
+    "brand": "茶の魔手",
+    "name": "烏龍茶M",
+    "category": "純茶",
+    "base": "烏龍茶",
+    "price": 25,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_006_l",
+    "brand": "茶の魔手",
+    "name": "烏龍茶L",
+    "category": "純茶",
+    "base": "烏龍茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_007_m",
+    "brand": "茶の魔手",
+    "name": "普洱茶M",
+    "category": "純茶",
+    "base": "普洱茶",
+    "price": 25,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "普洱茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_007_l",
+    "brand": "茶の魔手",
+    "name": "普洱茶L",
+    "category": "純茶",
+    "base": "普洱茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "普洱茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_008_m",
+    "brand": "茶の魔手",
+    "name": "梅子綠茶M",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "梅子"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_008_l",
+    "brand": "茶の魔手",
+    "name": "梅子綠茶L",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "梅子"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_009_m",
+    "brand": "茶の魔手",
+    "name": "蜂蜜綠茶M",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "蜂蜜"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "甜感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_009_l",
+    "brand": "茶の魔手",
+    "name": "蜂蜜綠茶L",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "蜂蜜"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "甜感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_010_m",
+    "brand": "茶の魔手",
+    "name": "檸檬紅茶M",
+    "category": "水果茶",
+    "base": "紅茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶",
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_010_l",
+    "brand": "茶の魔手",
+    "name": "檸檬紅茶L",
+    "category": "水果茶",
+    "base": "紅茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶",
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_011_m",
+    "brand": "茶の魔手",
+    "name": "檸檬綠茶M",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_011_l",
+    "brand": "茶の魔手",
+    "name": "檸檬綠茶L",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_012_m",
+    "brand": "茶の魔手",
+    "name": "奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_012_l",
+    "brand": "茶の魔手",
+    "name": "奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_013_m",
+    "brand": "茶の魔手",
+    "name": "珍珠奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "珍珠",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_013_l",
+    "brand": "茶の魔手",
+    "name": "珍珠奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "珍珠",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_014_m",
+    "brand": "茶の魔手",
+    "name": "波霸奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "波霸",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_014_l",
+    "brand": "茶の魔手",
+    "name": "波霸奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "波霸",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_015_m",
+    "brand": "茶の魔手",
+    "name": "仙草奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "仙草",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "teamagic_015_l",
+    "brand": "茶の魔手",
+    "name": "仙草奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "仙草",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_001_l",
+    "brand": "八曜和茶",
+    "name": "和風307L",
+    "category": "純茶",
+    "base": "特調",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "和風307"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_002_l",
+    "brand": "八曜和茶",
+    "name": "八曜和茶L",
+    "category": "純茶",
+    "base": "特調",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "八曜和茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_003_l",
+    "brand": "八曜和茶",
+    "name": "朝日覺醒紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_004_l",
+    "brand": "八曜和茶",
+    "name": "牧場覺醒紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_005_l",
+    "brand": "八曜和茶",
+    "name": "柚香覺醒307L",
+    "category": "水果茶",
+    "base": "柚香",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "柚香"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_006_l",
+    "brand": "八曜和茶",
+    "name": "熱帶覺醒307L",
+    "category": "純茶",
+    "base": "特調",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "熱帶覺醒307"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_007_l",
+    "brand": "八曜和茶",
+    "name": "白桃覺醒307L",
+    "category": "水果茶",
+    "base": "白桃",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "白桃"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_008_l",
+    "brand": "八曜和茶",
+    "name": "極上307L",
+    "category": "純茶",
+    "base": "特調",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "極上307"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_009_l",
+    "brand": "八曜和茶",
+    "name": "深煎烏龍L",
+    "category": "純茶",
+    "base": "烏龍茶",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_010_l",
+    "brand": "八曜和茶",
+    "name": "老茶莊烏龍L",
+    "category": "純茶",
+    "base": "烏龍茶",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_011_l",
+    "brand": "八曜和茶",
+    "name": "八曜鮮奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_012_l",
+    "brand": "八曜和茶",
+    "name": "牧場鮮奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 70,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_013_l",
+    "brand": "八曜和茶",
+    "name": "和風鮮奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_014_l",
+    "brand": "八曜和茶",
+    "name": "白桃鮮奶茶L",
+    "category": "奶茶",
+    "base": "白桃",
+    "price": 75,
+    "caffeineLevel": "low",
+    "containsMilk": true,
+    "ingredients": [
+      "白桃",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "hachiyo_015_l",
+    "brand": "八曜和茶",
+    "name": "柚香鮮奶茶L",
+    "category": "奶茶",
+    "base": "柚香",
+    "price": 75,
+    "caffeineLevel": "low",
+    "containsMilk": true,
+    "ingredients": [
+      "柚香",
+      "奶類",
+      "鮮奶"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_001_m",
+    "brand": "CoCo都可",
+    "name": "醇品紅茶M",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_001_l",
+    "brand": "CoCo都可",
+    "name": "醇品紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_002_m",
+    "brand": "CoCo都可",
+    "name": "四季春青茶M",
+    "category": "純茶",
+    "base": "青茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "青茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_002_l",
+    "brand": "CoCo都可",
+    "name": "四季春青茶L",
+    "category": "純茶",
+    "base": "青茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "青茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_003_m",
+    "brand": "CoCo都可",
+    "name": "茉香綠茶M",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 30,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_003_l",
+    "brand": "CoCo都可",
+    "name": "茉香綠茶L",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 35,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_004_m",
+    "brand": "CoCo都可",
+    "name": "奶茶三兄弟M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_004_l",
+    "brand": "CoCo都可",
+    "name": "奶茶三兄弟L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_005_m",
+    "brand": "CoCo都可",
+    "name": "珍珠奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "珍珠",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_005_l",
+    "brand": "CoCo都可",
+    "name": "珍珠奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "珍珠",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_006_m",
+    "brand": "CoCo都可",
+    "name": "布丁奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "布丁",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_006_l",
+    "brand": "CoCo都可",
+    "name": "布丁奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "布丁",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_007_m",
+    "brand": "CoCo都可",
+    "name": "巧克力奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_007_l",
+    "brand": "CoCo都可",
+    "name": "巧克力奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_008_m",
+    "brand": "CoCo都可",
+    "name": "3Q奶茶M",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "3Q配料",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_008_l",
+    "brand": "CoCo都可",
+    "name": "3Q奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "3Q配料",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁",
+      "咀嚼感"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_009_m",
+    "brand": "CoCo都可",
+    "name": "百香雙響炮M",
+    "category": "水果茶",
+    "base": "百香果",
+    "price": 55,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "百香果"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_009_l",
+    "brand": "CoCo都可",
+    "name": "百香雙響炮L",
+    "category": "水果茶",
+    "base": "百香果",
+    "price": 65,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "百香果"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_010_m",
+    "brand": "CoCo都可",
+    "name": "鮮百香綠茶M",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "百香果"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_010_l",
+    "brand": "CoCo都可",
+    "name": "鮮百香綠茶L",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "百香果"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_011_m",
+    "brand": "CoCo都可",
+    "name": "檸檬霸M",
+    "category": "水果茶",
+    "base": "檸檬",
+    "price": 55,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_011_l",
+    "brand": "CoCo都可",
+    "name": "檸檬霸L",
+    "category": "水果茶",
+    "base": "檸檬",
+    "price": 65,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_012_m",
+    "brand": "CoCo都可",
+    "name": "檸檬冬瓜露M",
+    "category": "水果茶",
+    "base": "冬瓜",
+    "price": 45,
+    "caffeineLevel": "none",
+    "containsMilk": false,
+    "ingredients": [
+      "冬瓜",
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "甜感",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "無咖啡因"
+    ],
+    "note": "甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_012_l",
+    "brand": "CoCo都可",
+    "name": "檸檬冬瓜露L",
+    "category": "水果茶",
+    "base": "冬瓜",
+    "price": 55,
+    "caffeineLevel": "none",
+    "containsMilk": false,
+    "ingredients": [
+      "冬瓜",
+      "檸檬"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜",
+      "甜感",
+      "酸感"
+    ],
+    "healthTags": [
+      "無奶",
+      "無咖啡因"
+    ],
+    "note": "甜度可能較固定或甜感較明顯；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_013_m",
+    "brand": "CoCo都可",
+    "name": "鮮榨蘋果百香M",
+    "category": "水果茶",
+    "base": "百香果",
+    "price": 65,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "百香果",
+      "蘋果"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_013_l",
+    "brand": "CoCo都可",
+    "name": "鮮榨蘋果百香L",
+    "category": "水果茶",
+    "base": "百香果",
+    "price": 75,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "百香果",
+      "蘋果"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_014_m",
+    "brand": "CoCo都可",
+    "name": "芒果綠茶M",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "芒果"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_014_l",
+    "brand": "CoCo都可",
+    "name": "芒果綠茶L",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 65,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "芒果"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_015_m",
+    "brand": "CoCo都可",
+    "name": "綠茶養樂多M",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 50,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "綠茶",
+      "養樂多"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "coco_015_l",
+    "brand": "CoCo都可",
+    "name": "綠茶養樂多L",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 60,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "綠茶",
+      "養樂多"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽",
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_001_l",
+    "brand": "龜記",
+    "name": "極品紅茶L",
+    "category": "純茶",
+    "base": "紅茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_002_l",
+    "brand": "龜記",
+    "name": "翡翠綠茶L",
+    "category": "純茶",
+    "base": "綠茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_003_l",
+    "brand": "龜記",
+    "name": "青四季春L",
+    "category": "純茶",
+    "base": "四季春茶",
+    "price": 40,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "四季春茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_004_l",
+    "brand": "龜記",
+    "name": "三韻紅萱L",
+    "category": "特調",
+    "base": "特調",
+    "price": 45,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "三韻紅萱"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_005_l",
+    "brand": "龜記",
+    "name": "三十三茶王L",
+    "category": "純茶",
+    "base": "茶王",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "茶王"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_006_l",
+    "brand": "龜記",
+    "name": "碎銀普洱茶L",
+    "category": "純茶",
+    "base": "普洱茶",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "普洱茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_007_l",
+    "brand": "龜記",
+    "name": "花沫烏龍L",
+    "category": "純茶",
+    "base": "烏龍茶",
+    "price": 45,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_008_l",
+    "brand": "龜記",
+    "name": "鮮果百香紅茶L",
+    "category": "水果茶",
+    "base": "紅茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "紅茶",
+      "百香果"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_009_l",
+    "brand": "龜記",
+    "name": "鮮果百香綠茶L",
+    "category": "水果茶",
+    "base": "綠茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "綠茶",
+      "百香果"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_010_l",
+    "brand": "龜記",
+    "name": "翡翠雷夢L",
+    "category": "特調",
+    "base": "特調",
+    "price": 60,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "翡翠雷夢"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_011_l",
+    "brand": "龜記",
+    "name": "柳丁翡翠L",
+    "category": "水果茶",
+    "base": "柳丁",
+    "price": 60,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "柳丁"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_012_l",
+    "brand": "龜記",
+    "name": "蘋果紅萱L",
+    "category": "水果茶",
+    "base": "蘋果",
+    "price": 60,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "蘋果"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_013_l",
+    "brand": "龜記",
+    "name": "蜜桃烏龍L",
+    "category": "純茶",
+    "base": "烏龍茶",
+    "price": 70,
+    "caffeineLevel": "medium",
+    "containsMilk": false,
+    "ingredients": [
+      "烏龍茶"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "茶感",
+      "清爽"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_014_l",
+    "brand": "龜記",
+    "name": "紅柚翡翠L",
+    "category": "水果茶",
+    "base": "特調",
+    "price": 75,
+    "caffeineLevel": "low",
+    "containsMilk": false,
+    "ingredients": [
+      "紅柚翡翠"
+    ],
+    "allergens": [],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "清爽",
+      "酸甜"
+    ],
+    "healthTags": [
+      "無奶",
+      "含咖啡因",
+      "低熱量"
+    ],
+    "note": "含咖啡因；實際成分與價格請以門市公告為準"
+  },
+  {
+    "id": "guiji_015_l",
+    "brand": "龜記",
+    "name": "極品奶茶L",
+    "category": "奶茶",
+    "base": "奶茶",
+    "price": 55,
+    "caffeineLevel": "medium",
+    "containsMilk": true,
+    "ingredients": [
+      "奶茶",
+      "奶類"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "availableSweetness": [
+      "無糖",
+      "微糖",
+      "半糖",
+      "少糖",
+      "正常"
+    ],
+    "availableIce": [
+      "去冰",
+      "微冰",
+      "少冰",
+      "正常冰"
+    ],
+    "flavorTags": [
+      "奶香",
+      "濃郁"
+    ],
+    "healthTags": [
+      "含奶",
+      "含咖啡因"
+    ],
+    "note": "含奶類成分；含咖啡因；實際成分與價格請以門市公告為準"
+  }
 ]
