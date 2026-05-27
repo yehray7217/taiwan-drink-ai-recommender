@@ -22,6 +22,7 @@ python src/rule_engine.py --drinks data/drinks.json --preference test_preference
 import argparse
 import json
 import os
+import re
 from typing import Any, Dict, List, Optional, Tuple
 import warnings
 
@@ -103,11 +104,41 @@ QUERY_PREFERENCE_SYNONYMS = {
     "仙草": ["仙草", "仙草凍", "咀嚼感"],
     "布丁": ["布丁", "咀嚼感"],
     "奶蓋": ["奶蓋", "奶霜", "起司奶蓋", "鹹奶蓋"],
-    "檸檬": ["檸檬", "酸甜", "水果", "清爽"],
-    "水果": ["水果", "果茶", "清爽", "酸甜"],
-    "清爽": ["清爽", "茶感", "水果"],
+    # 奶茶是使用者想喝的飲料類型，不是「不要奶」條件。
+    "奶茶": ["奶茶", "鮮奶茶", "厚奶茶", "milk tea"],
+    # 注意：冬瓜茶不是水果茶。
+    # 因此「水果」不要再展開成「清爽 / 酸甜」，避免把冬瓜茶、純茶、古早味茶錯算成水果茶。
+    "檸檬": ["檸檬", "酸甜", "水果", "果茶", "水果茶"],
+    "水果": ["水果", "果茶", "水果茶", "鮮果", "果香"],
+    "清爽": ["清爽", "茶感"],
+    "冬瓜": ["冬瓜", "冬瓜茶", "古早味", "甜茶"],
     "茶感": ["茶感", "純茶", "紅茶", "綠茶", "青茶", "烏龍茶"],
 }
+
+FRUIT_REQUEST_TERMS = {"水果", "果茶", "水果茶", "鮮果", "果香"}
+WINTER_MELON_TERMS = {"冬瓜", "冬瓜茶"}
+
+# 從飲料名稱自動推論標籤。
+# 原則：資料缺 flavorTags 時，至少用 name/category/base/ingredients 做最基本的語意標籤；
+# 但不要把「冬瓜」推成「水果」。冬瓜是古早味/甜茶，不是水果茶。
+NAME_TAG_RULES = [
+    (["冬瓜"], ["冬瓜", "冬瓜茶", "古早味", "甜茶"]),
+    (["檸檬", "金桔", "桔", "柳橙", "橙", "葡萄柚", "葡萄", "百香", "芒果", "草莓", "莓", "鳳梨", "蘋果", "荔枝", "水蜜桃", "桃", "奇異果", "柚子", "柚", "水果", "果茶"],
+     ["水果", "水果茶", "果茶", "鮮果", "果香", "酸甜", "清爽"]),
+    (["珍珠", "波霸", "粉圓"], ["珍珠", "波霸", "粉圓", "咀嚼感"]),
+    (["椰果"], ["椰果", "咀嚼感"]),
+    (["茶凍", "凍"], ["茶凍", "咀嚼感"]),
+    (["仙草"], ["仙草", "仙草凍", "咀嚼感", "古早味"]),
+    (["布丁"], ["布丁", "咀嚼感"]),
+    (["奶蓋", "奶霜"], ["奶蓋", "奶霜", "奶類"]),
+    (["奶茶", "鮮奶", "拿鐵", "歐蕾", "可可", "巧克力"], ["奶類", "乳製品", "奶味"]),
+    (["紅茶"], ["紅茶", "茶感", "純茶"]),
+    (["綠茶"], ["綠茶", "茶感", "純茶"]),
+    (["青茶"], ["青茶", "茶感", "純茶"]),
+    (["烏龍", "鐵觀音"], ["烏龍茶", "茶感", "純茶"]),
+    (["多多", "養樂多"], ["多多", "酸甜"]),
+    (["咖啡"], ["咖啡", "咖啡因"]),
+]
 
 NEGATION_PREFIXES = [
     "不要", "不想要", "不想", "不喝", "避免", "不加", "去掉", "無", "不含"
@@ -147,13 +178,143 @@ def query_has_positive_term(query: str, terms: List[str]) -> bool:
     return False
 
 
-def extract_query_preferences(preference: Dict[str, Any]) -> Dict[str, List[str]]:
-    """
-    從自然語句 query 裡抽出偏好。
+def query_contains_any(query: str, terms: List[str]) -> bool:
+    query_lower = query.lower()
+    return any(str(term).strip().lower() in query_lower for term in terms if str(term).strip())
 
-    例如：
-    - query = "我想喝珍珠" -> preferredFlavors / requestedIngredients 加入 珍珠、波霸、粉圓
-    - query = "不要珍珠" -> dislikedFlavors / avoidIngredients 加入 珍珠、波霸、粉圓
+
+def extract_query_budget(query: str) -> Optional[int]:
+    """
+    從自然語言抓預算，例如：
+    - 預算70元內
+    - 不要超過 80
+    - 100元以下
+    """
+    compact_query = query.replace(" ", "")
+    patterns = [
+        r"(?:預算|價格|價錢|不要超過|不超過|低於|小於|最多|至多|上限|以內|以下|內|under|below)\s*(?:NT\$|NTD|\$)?\s*(\d{2,3})\s*(?:元|塊)?",
+        r"(?:NT\$|NTD|\$)?\s*(\d{2,3})\s*(?:元|塊)\s*(?:以內|以下|內)",
+        r"(\d{2,3})\s*(?:元|塊)?\s*(?:以內|以下|內)",
+    ]
+
+    for pattern in patterns:
+        match = re.search(pattern, compact_query, flags=re.IGNORECASE)
+        if not match:
+            continue
+        try:
+            return int(match.group(1))
+        except (TypeError, ValueError):
+            continue
+
+    return None
+
+
+def extract_query_sweetness(query: str) -> Optional[str]:
+    """從自然語言抓甜度上限。"""
+    compact_query = query.replace(" ", "")
+
+    # 先抓明確甜度，避免「不要太甜」蓋過「半糖」這類明確條件。
+    explicit_order = [
+        "無糖", "0糖", "0%",
+        "微糖", "三分糖", "三分甜", "3分糖", "3分甜", "30%",
+        "半糖", "五分糖", "五分甜", "5分糖", "5分甜", "50%",
+        "少糖", "七分糖", "七分甜", "7分糖", "7分甜", "70%",
+        "八分糖", "八分甜", "8分糖", "8分甜", "80%",
+        "正常糖", "正常甜", "全糖", "100%",
+    ]
+    for label in explicit_order:
+        if label in compact_query:
+            return label
+
+    if query_contains_any(compact_query, ["不要糖", "不加糖", "無甜", "完全不甜", "zero sugar"]):
+        return "無糖"
+    if query_contains_any(compact_query, ["不要太甜", "不想太甜", "少甜", "低糖", "糖少", "甜度低", "健康一點", "健康點"]):
+        return "微糖"
+
+    return None
+
+
+def extract_query_ice(query: str) -> Optional[str]:
+    """從自然語言抓冰量偏好。"""
+    compact_query = query.replace(" ", "")
+    ice_order = ["去冰", "微冰", "少冰", "正常冰", "常溫", "溫", "熱"]
+    for label in ice_order:
+        if label in compact_query:
+            if label == "溫":
+                return "常溫"
+            return label
+    return None
+
+
+def extract_query_time_of_day(query: str) -> Optional[str]:
+    compact_query = query.replace(" ", "")
+    if query_contains_any(compact_query, ["晚上", "夜晚", "半夜", "宵夜", "睡前", "晚餐後"]):
+        return "night"
+    return None
+
+
+def extract_query_caffeine_limit(query: str) -> Optional[str]:
+    compact_query = query.replace(" ", "")
+    lower_query = compact_query.lower()
+
+    no_caffeine_terms = [
+        "無咖啡因", "零咖啡因", "不含咖啡因", "不要咖啡因", "不能喝咖啡因", "咖啡因過敏", "decaf", "caffeinefree"
+    ]
+    low_caffeine_terms = [
+        "低咖啡因", "少咖啡因", "咖啡因少", "咖啡因低", "不要太多咖啡因", "咖啡因不要太高",
+        "晚上", "夜晚", "半夜", "宵夜", "睡前", "怕睡不著", "不想睡不著"
+    ]
+
+    if query_contains_any(lower_query, no_caffeine_terms):
+        return "none"
+    if query_contains_any(lower_query, low_caffeine_terms):
+        return "low"
+
+    return None
+
+
+def extract_query_no_milk(query: str) -> bool:
+    compact_query = query.replace(" ", "")
+    no_milk_patterns = [
+        "不能喝牛奶", "不喝牛奶", "不要牛奶", "不含牛奶", "無牛奶",
+        "不能喝奶", "不喝奶", "不要奶類", "不含奶類", "無奶", "不要奶",
+        "不能喝乳製品", "不含乳製品", "不要乳製品", "乳製品過敏",
+        "乳糖不耐", "牛奶過敏", "鮮奶過敏", "奶精過敏", "奶類過敏",
+        "dairyfree", "lactoseintolerant", "nomilk",
+    ]
+    return query_contains_any(compact_query.lower(), no_milk_patterns)
+
+
+def extract_query_allergens(query: str) -> List[str]:
+    compact_query = query.replace(" ", "")
+    allergen_terms = {
+        "milk": ["牛奶過敏", "鮮奶過敏", "奶精過敏", "奶類過敏", "乳製品過敏", "乳糖不耐"],
+        "牛奶": ["牛奶過敏", "不能喝牛奶", "不喝牛奶"],
+        "花生": ["花生過敏", "不能吃花生"],
+        "堅果": ["堅果過敏", "不能吃堅果"],
+        "芒果": ["芒果過敏", "不能吃芒果"],
+        "蜂蜜": ["蜂蜜過敏", "不能吃蜂蜜"],
+    }
+
+    allergens: List[str] = []
+    for allergen, terms in allergen_terms.items():
+        if query_contains_any(compact_query, terms):
+            allergens.append(allergen)
+    return unique_keep_order(allergens)
+
+
+def extract_query_preferences(preference: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    從自然語句 query 裡抽出偏好與限制。
+
+    目的：使用者只在「自然語言需求」輸入，例如：
+    「晚上喝，不要太甜，70元內，不能喝牛奶，想要珍珠」
+    即使下方標籤完全沒填，也會自動轉成：
+    - budgetMax: 70
+    - caffeineLimit: low
+    - sweetnessMax: 微糖
+    - noMilk: True
+    - requestedIngredients: 珍珠/波霸/粉圓
     """
     query = str(preference.get("query", "") or "")
 
@@ -173,16 +334,34 @@ def extract_query_preferences(preference: Dict[str, Any]) -> Dict[str, List[str]
         else:
             preferred_flavors.extend(terms)
             # 配料類需求要比一般口味偏好更強，例如「要珍珠」應該優先推有珍珠/波霸的品項。
-            if canonical in {"珍珠", "波霸", "粉圓", "椰果", "茶凍", "仙草", "布丁", "奶蓋"}:
+            if canonical in {"珍珠", "波霸", "粉圓", "椰果", "茶凍", "仙草", "布丁", "奶蓋", "奶茶"}:
                 requested_ingredients.extend(terms)
+
+    no_milk = extract_query_no_milk(query)
+    allergens = extract_query_allergens(query)
+
+    if no_milk:
+        avoid_ingredients.extend(["牛奶", "鮮乳", "奶精", "奶蓋", "奶類", "乳製品"])
+        allergens.extend(["milk", "牛奶"])
+        disliked_flavors.extend(["奶味"])
+
+    parsed_from_query = {
+        "budgetMax": extract_query_budget(query),
+        "caffeineLimit": extract_query_caffeine_limit(query),
+        "sweetnessMax": extract_query_sweetness(query),
+        "icePreference": extract_query_ice(query),
+        "timeOfDay": extract_query_time_of_day(query),
+        "noMilk": no_milk,
+    }
 
     return {
         "preferredFlavors": unique_keep_order(preferred_flavors),
         "dislikedFlavors": unique_keep_order(disliked_flavors),
         "requestedIngredients": unique_keep_order(requested_ingredients),
         "avoidIngredients": unique_keep_order(avoid_ingredients),
+        "allergens": unique_keep_order(allergens),
+        **parsed_from_query,
     }
-
 
 def contains_any_text(search_text: str, terms: List[str]) -> List[str]:
     search_lower = search_text.lower()
@@ -192,6 +371,79 @@ def contains_any_text(search_text: str, terms: List[str]) -> List[str]:
         if term and term.lower() in search_lower:
             hits.append(term)
     return unique_keep_order(hits)
+
+
+def infer_name_tags(drink: Dict[str, Any]) -> List[str]:
+    """
+    從飲料名稱/類別/基底/成分自動產生保守標籤。
+
+    為什麼需要：
+    - 有些 drinks.json 品項沒填 flavorTags，原本就可能靠其它條件混進結果。
+    - 這裡至少把「品項名稱」當成標籤來源。
+    - 例如「冬瓜茶」會得到冬瓜/古早味/甜茶，但不會得到水果茶。
+    """
+    text = " ".join([
+        str(drink.get("name", "")),
+        str(drink.get("category", "")),
+        str(drink.get("base", "")),
+        " ".join(normalize_list(drink.get("ingredients", []))),
+    ])
+
+    tags: List[str] = []
+    for keywords, inferred_tags in NAME_TAG_RULES:
+        if any(keyword in text for keyword in keywords):
+            tags.extend(inferred_tags)
+
+    # 把飲料名稱本身也放進搜尋文字，讓「想喝冬瓜茶 / 珍珠奶茶 / 檸檬綠」這種完整品名可以命中。
+    name = str(drink.get("name", "")).strip()
+    if name:
+        tags.append(name)
+
+    # 冬瓜茶不算水果茶：即使名字裡有「茶」，也不要額外補水果標籤。
+    if any(term in text for term in WINTER_MELON_TERMS):
+        tags = [tag for tag in tags if tag not in FRUIT_REQUEST_TERMS and tag not in {"酸甜", "鮮果", "果香"}]
+
+    return unique_keep_order(tags)
+
+
+def drink_search_text(drink: Dict[str, Any]) -> str:
+    fields = [
+        str(drink.get("name", "")),
+        str(drink.get("brand", "")),
+        str(drink.get("category", "")),
+        str(drink.get("base", "")),
+    ]
+    fields += normalize_list(drink.get("ingredients", []))
+    fields += normalize_list(drink.get("flavorTags", []))
+    fields += normalize_list(drink.get("healthTags", []))
+    fields += infer_name_tags(drink)
+    return " ".join(fields)
+
+
+def drink_matches_fruit_request(drink: Dict[str, Any]) -> bool:
+    """判斷飲料是否真的符合水果茶需求。冬瓜茶明確排除。"""
+    if drink_is_winter_melon_tea(drink):
+        return False
+    text = drink_search_text(drink)
+    return any(term in text for term in FRUIT_REQUEST_TERMS)
+
+
+def drink_is_winter_melon_tea(drink: Dict[str, Any]) -> bool:
+    text = drink_search_text(drink)
+    return any(term in text for term in WINTER_MELON_TERMS)
+
+
+def user_explicitly_requests_fruit_tea(query: str, preferred_terms: List[str]) -> bool:
+    query_text = str(query or "")
+    if any(term in query_text for term in FRUIT_REQUEST_TERMS):
+        return True
+    return any(term in FRUIT_REQUEST_TERMS for term in preferred_terms)
+
+
+def remove_fruit_terms_for_winter_melon(terms: List[str]) -> List[str]:
+    # 冬瓜茶不是水果茶。若資料庫誤把冬瓜茶標成「水果/果茶」，
+    # 這裡避免它因為水果茶需求被加分。
+    return [term for term in terms if term not in FRUIT_REQUEST_TERMS]
 
 
 def load_json(path: str) -> Any:
@@ -279,23 +531,38 @@ def get_no_milk(preference: Dict[str, Any]) -> bool:
 def build_filter_config(preference: Dict[str, Any]) -> Dict[str, Any]:
     query_preferences = extract_query_preferences(preference)
 
-    allergens = normalize_list(get_first_existing(preference, ["allergens", "avoidAllergens"], []))
+    allergens = unique_keep_order(
+        normalize_list(get_first_existing(preference, ["allergens", "avoidAllergens"], []))
+        + query_preferences.get("allergens", [])
+    )
+
     avoid_ingredients = normalize_list(
         get_first_existing(preference, ["avoidIngredients", "avoid_ingredients"], [])
     )
-    avoid_ingredients = unique_keep_order(avoid_ingredients + query_preferences["avoidIngredients"])
+    avoid_ingredients = unique_keep_order(avoid_ingredients + query_preferences.get("avoidIngredients", []))
 
     preferred_flavors = unique_keep_order(
         normalize_list(preference.get("preferredFlavors", []))
-        + query_preferences["preferredFlavors"]
+        + query_preferences.get("preferredFlavors", [])
     )
     disliked_flavors = unique_keep_order(
         normalize_list(preference.get("dislikedFlavors", []))
-        + query_preferences["dislikedFlavors"]
+        + query_preferences.get("dislikedFlavors", [])
     )
 
+    # 優先採用下方標籤/欄位；如果使用者沒有填，才使用自然語言 query 抽出的條件。
     price_max = get_price_max(preference)
+    if price_max is None:
+        price_max = query_preferences.get("budgetMax")
+
     caffeine_limit = get_caffeine_limit(preference)
+    if caffeine_limit == "no_limit" and query_preferences.get("caffeineLimit"):
+        caffeine_limit = query_preferences.get("caffeineLimit")
+
+    sweetness_max = get_sweetness_max(preference) or query_preferences.get("sweetnessMax")
+    ice_preference = get_ice_preference(preference) or query_preferences.get("icePreference")
+    time_of_day = preference.get("timeOfDay") or query_preferences.get("timeOfDay")
+    no_milk = get_no_milk(preference) or bool(query_preferences.get("noMilk"))
 
     return {
         "userQuery": str(preference.get("query", "") or ""),
@@ -303,25 +570,24 @@ def build_filter_config(preference: Dict[str, Any]) -> Dict[str, Any]:
         "mustExclude": {
             "allergens": allergens,
             "ingredients": avoid_ingredients,
-            "noMilk": get_no_milk(preference),
+            "noMilk": no_milk,
         },
         "mustMatch": {
             "priceMax": price_max,
             "caffeineMax": caffeine_limit,
         },
         "softPreferences": {
-            "sweetnessMax": get_sweetness_max(preference),
-            "icePreference": get_ice_preference(preference),
+            "sweetnessMax": sweetness_max,
+            "icePreference": ice_preference,
             "preferredFlavors": preferred_flavors,
             "dislikedFlavors": disliked_flavors,
-            "requestedIngredients": query_preferences["requestedIngredients"],
-            "timeOfDay": preference.get("timeOfDay"),
+            "requestedIngredients": query_preferences.get("requestedIngredients", []),
+            "timeOfDay": time_of_day,
             "brandPreference": normalize_list(preference.get("brandPreference", [])),
             "topK": int(preference.get("topK", 5)),
             "maxSameBrandInTopK": int(preference.get("maxSameBrandInTopK", 1)),
         },
     }
-
 
 def caffeine_value(level: Any) -> int:
     return CAFFEINE_RANK.get(str(level), 99)
@@ -551,17 +817,23 @@ def score_soft_rules(drink: Dict[str, Any], filter_config: Dict[str, Any]) -> Di
     preferred = normalize_list(soft.get("preferredFlavors", []))
     disliked = normalize_list(soft.get("dislikedFlavors", []))
 
-    search_fields = [
-        str(drink.get("name", "")),
-        str(drink.get("brand", "")),
-        str(drink.get("category", "")),
-        str(drink.get("base", "")),
-    ]
-    search_fields += normalize_list(drink.get("ingredients", []))
-    search_fields += normalize_list(drink.get("flavorTags", []))
-    search_fields += normalize_list(drink.get("healthTags", []))
+    search_text = drink_search_text(drink)
+    is_winter_melon = drink_is_winter_melon_tea(drink)
+    fruit_requested = user_explicitly_requests_fruit_tea(query, preferred)
 
-    search_text = " ".join(search_fields)
+    if fruit_requested:
+        if drink_matches_fruit_request(drink):
+            score += 18
+            matched_reasons.append("符合水果茶需求")
+        else:
+            preferred = remove_fruit_terms_for_winter_melon(preferred)
+            # 使用者明確要水果茶時，不符合的品項要大幅降權，避免冬瓜茶或純茶靠其它條件混進 Top。
+            score -= 45
+            if is_winter_melon:
+                score -= 30
+                warnings.append("冬瓜茶不算水果茶，已降低推薦優先序")
+            else:
+                warnings.append("不符合水果茶需求，已降低推薦優先序")
 
     # 指定配料比一般偏好更強。
     # 例如使用者輸入「要珍珠」，資料裡的「珍珠奶茶」與「波霸奶茶」都應該大幅加分。
@@ -599,6 +871,7 @@ def score_soft_rules(drink: Dict[str, Any], filter_config: Dict[str, Any]) -> Di
 
     enriched = dict(drink)
     enriched["recommendedOrder"] = "、".join(recommended_order_parts) if recommended_order_parts else "依店家預設"
+    enriched["inferredNameTags"] = infer_name_tags(drink)
     enriched["matchScore"] = max(0, min(100, int(score)))
     enriched["matchedReasons"] = matched_reasons
     enriched["warnings"] = list(dict.fromkeys(warnings))
@@ -618,6 +891,7 @@ def format_candidate_drink(drink):
         "availableSweetness": drink.get("availableSweetness", []),
         "availableIce": drink.get("availableIce", []),
         "flavorTags": drink.get("flavorTags", []),
+        "inferredNameTags": drink.get("inferredNameTags", infer_name_tags(drink)),
         "recommendedOrder": drink.get("recommendedOrder"),
         "matchScore": drink.get("matchScore", 0),
         "matchedReasons": drink.get("matchedReasons", []),
@@ -722,17 +996,24 @@ def filter_drinks(drinks: List[Dict[str, Any]], preference: Dict[str, Any]) -> D
 
 
 def default_preference() -> Dict[str, Any]:
+    """
+    中性預設值。
+
+    注意：這裡不能放「不能喝牛奶」這種 demo 條件，
+    因為前端或 API 如果沒有正確傳入 preference，系統會誤用預設條件，
+    導致使用者只輸入「奶茶」時也被判定成不能喝牛奶。
+    """
     return {
-        "query": "晚上不想喝太多咖啡因，不要太甜，預算70元內，不能喝牛奶",
-        "sweetnessMax": "微糖",
-        "icePreference": "少冰",
-        "budgetMax": 70,
-        "caffeineLimit": "low",
-        "allergens": ["milk"],
-        "avoidIngredients": ["牛奶", "奶精", "奶蓋"],
-        "preferredFlavors": ["清爽", "水果"],
-        "dislikedFlavors": ["太甜", "太濃", "奶味"],
-        "timeOfDay": "night",
+        "query": "",
+        "sweetnessMax": None,
+        "icePreference": None,
+        "budgetMax": None,
+        "caffeineLimit": "no_limit",
+        "allergens": [],
+        "avoidIngredients": [],
+        "preferredFlavors": [],
+        "dislikedFlavors": [],
+        "timeOfDay": None,
         "brandPreference": [],
         "topK": 5,
         "maxSameBrandInTopK": 1,
